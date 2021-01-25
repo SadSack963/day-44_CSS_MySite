@@ -15,6 +15,7 @@ body {
     margin: 0;
     text-align: center;
     font-family: "Merriweather", serif;
+    background-color: white;
 }
 
 h1 {
@@ -24,32 +25,121 @@ h1 {
         e.g. for visually impaired who want to change the browser default font-size. 
     ***** Prefer using rem (root em) ***** to px, % and em. 
         This is not affected by font-size inheritance e.g. from the body.*/
-    font-size: 5.6rem; /* 100% = 16px = 1em */
+    font-size: 5.6rem;
+    /* 100% = 16px = 1em */
+    line-height: 2;
+    color: #66bfbf;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #66bfbf;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
+    color: #11999e;
+}
+
+hr {
+    width: 5%;
+    border-color: #eaf6f6;
+    border-style: dotted;
+    border-top-width: 5px;
+}
+
+a {
+    color: #11999e;
 }
 
 .top {
     position: relative;
-    background-color: #e4f9f5;
+    background-color: #eaf6f6;
     padding-top: 100px;
 }
 
+.mid {
+    background-color: white;
+}
+
+.bot {
+    background-color: #66bfbf;
+    padding: 40px;
+}
 
 .cloud-top {
     position: absolute;
     top: 50px;
-    left: 300px;
+    right: 300px;
 }
+
 .cloud-bottom {
     position: absolute;
     left: 300px;
     bottom: 300px;
 }
+
+.text-intro {
+    color: #40614e;
+}
+
+.skill-row {
+    /* scale to 50% of the enclosing element width (mid) */
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.img-plc {
+    /* scale to 50% of the enclosing element width (skill-row)... not 50% of original image size! */
+    width: 50%;
+    float: left;
+    margin-right: 30px;
+}
+
+.img-scada {
+    width: 50%;
+    float: right;
+    margin-left: 30px;
+}
+
+.design_descr {
+    clear: both;
+}
+
+.scada_descr {
+    clear: both;
+}
+
+.footer-link {
+    padding: 5px 20px 5px 20px;
+}
+.copywrite {
+    font-size: 0.8em;
+    color: white;
+}
+
+/* https://cssbuttoncreator.com/ */
+
+.BUTTON_CONTACT {
+    background: #66BFBF;
+    padding: 5px 15px 5px 15px;
+    border: 0;
+    margin: 30px 0;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 2em;
+    font-weight: 600;
+    box-shadow: 5px 6px 15px 0 #40514e;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+.BUTTON_CONTACT:hover {
+    background: #11999E;
+ }
