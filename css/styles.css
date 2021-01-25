@@ -1,1 +1,55 @@
-body {background-color: green;}
+/* 
+https://colorhunt.co/palette/14832 
+color palette: e4f9f5 30e3ca 11999e 40514e
+*/
+
+/*
+https://fonts.google.com/
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Tangerine', cursive;
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    margin: 50px auto 0;
+    font-family: 'Tangerine', cursive;
+    /* Specifying px is a static size - not scalable, 
+        e.g. for visually impaired who want to change the browser default font-size. 
+    ***** Prefer using rem (root em) ***** to px, % and em. 
+        This is not affected by font-size inheritance e.g. from the body.*/
+    font-size: 5.6rem; /* 100% = 16px = 1em */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top {
+    position: relative;
+    background-color: #e4f9f5;
+    padding-top: 100px;
+}
+
+
+.cloud-top {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+.cloud-bottom {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
